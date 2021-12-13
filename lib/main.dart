@@ -13,8 +13,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
             title: const Text('I Am Poor'), backgroundColor: Colors.brown[900]),
-        body: const Image(
-          image: AssetImage('images/avatar_bbchain.png'),
+        body: SafeArea(
+          child: Container(
+            color: Colors.blueGrey[300],
+            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+            child: const Text('Container com Margem e Padding'),
+          ),
         ),
         backgroundColor: Colors.brown[700],
       ),
