@@ -23,7 +23,13 @@ class MyApp extends StatelessWidget {
                 margin:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                 padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                child: const Text('Container com Margem e Padding 1'),
+                child: const Text(
+                  'Container com Margem e Padding 1',
+                  style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w600),
+                ),
               ),
               Container(
                 color: Colors.blueGrey[300],
