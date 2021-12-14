@@ -36,7 +36,22 @@ class MyApp extends StatelessWidget {
                 margin:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                 padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                child: const Text('Container com Margem e Padding 2'),
+                child: Row(
+                  children: const [
+                    Icon(
+                      Icons.schedule,
+                    ),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    Text(
+                      'Container com Margem e Padding 2',
+                      style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
               ),
               Container(
                 color: Colors.blueGrey[300],
